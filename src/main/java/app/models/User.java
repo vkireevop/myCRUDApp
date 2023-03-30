@@ -7,7 +7,7 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column
+
     private String name;
 
     public String getName() {
@@ -25,9 +25,7 @@ public class User {
     public User () {
 
     }
-    public User (String name) {
-        this.name = name;
-    }
+
     @Override
     public String toString(){
         return name;
